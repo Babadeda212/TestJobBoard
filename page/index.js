@@ -116,3 +116,4 @@ window.addEventListener('scroll',()=>{
     if(bgBlur.style.opacity>0.99)
     bgBlur.style.opacity=0.999;
 })
+console.log(123);
