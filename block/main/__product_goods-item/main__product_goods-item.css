@@ -1,0 +1,11 @@
+.main__product_goods-item{
+    width: 160px;
+    height: 160px;
+    text-align: center;
+    margin-bottom: 27px;
+}
+.main__product_goods-item:hover{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px #EAEAEA;
+    border-radius: 30px;
+}

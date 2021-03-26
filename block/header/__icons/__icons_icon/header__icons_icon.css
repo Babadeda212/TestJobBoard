@@ -1,0 +1,6 @@
+.header__icons_icon{
+    margin-right: 20px;
+}
+.header__icons_icon:last-child{
+    margin-right: 0;
+}

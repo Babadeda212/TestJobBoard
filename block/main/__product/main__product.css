@@ -1,0 +1,10 @@
+.main__product{
+    background-color: white ;
+    width: 1300px;
+    margin-top: 216px;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    top: 425px;
+}

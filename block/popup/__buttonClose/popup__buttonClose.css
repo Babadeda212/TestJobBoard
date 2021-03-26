@@ -1,0 +1,6 @@
+.popup__buttonClose{
+    margin:20px 36px 0 auto;
+}
+.popup__buttonClose:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page/index.css">
+</head>
+<body class="root">
+    <header class="header">
+        <img class="header__logo" src="image/header/logo.png">
+        <div class="header__menu">
+            <div class="header__menu_item">
+                <img class="header__menu_item-image" src="image/header/cosmeticsIco.png">
+                <h2 class="header__menu_item-text">Косметика</h2>
+                <img class="header__menu_item-arrow" src="image/header/arrowIco.png">
+            </div>
+            <div class="header__menu_item">
+                <img class="header__menu_item-image" src="image/header/equipmentIco.png">
+                <h2 class="header__menu_item-text">Оборудование</h2>
+                <img class="header__menu_item-arrow" src="image/header/arrowIco.png">
+            </div>
+            <div class="header__menu_item">
+                <img class="header__menu_item-image" src="image/header/fineryIco.png">
+                <h2 class="header__menu_item-text">Украшения</h2>
+                <img class="header__menu_item-arrow" src="image/header/arrowIco.png">
+            </div>
+            <div class="header__menu_item">
+                <img class="header__menu_item-image" src='image/header/blogIco.png'>
+                <h2 class="header__menu_item-text">Бьюти-бложик</h2>
+            </div>
+        </div>
+        <div class="header__icons">
+            <img class="header__icons_icon" src="image/header/backetIco.png">
+            <img class="header__icons_icon" src="image/header/favoritsIco.png">
+            <img class="header__icons_icon" src="image/header/loginIco.png">
+        </div>
+    </header>
+    <main class="main">
+        <div class="bg">
+            <video autoplay muted loop class="bg-video">
+                <source src="video/video.mp4" type="video/mp4">
+            </video>
+            <img src="image/bg_video.png" alt="" class="bg-set">
+            <div class="bg-blur"></div>
+        </div>
+        <div class="main__title">
+            <h1 class="main__title_text">Ты — классная!</h1>
+            <button class="main__title_button">Обратная связь</button>
+        </div>
+        <div class="main__product">
+            <p class="main__product_text">Мы выбрали для тебя самые классные товары из нашего интернет-магазина:</p>
+            <div class="main__product_goods">
+                <div class="main__product_goods-item">
+                    <img class="main__product_goods-itemImage" src="image/product/prodItem1.png">
+                    <p class="main__product_goods-itemText">Лаки для ногтей</p>
+                </div>
+                <div class="main__product_goods-item">
+                    <img class="main__product_goods-itemImage" src="image/product/prodItem2.png">
+                    <p class="main__product_goods-itemText">Дизайн для ногтей</p>
+                </div>
+                <div class="main__product_goods-item">
+                    <img class="main__product_goods-itemImage" src="image/product/prodItem3.png">
+                    <p class="main__product_goods-itemText">Инструменты для маникюра и педикюра</p>
+                </div>
+                <div class="main__product_goods-item">
+                    <img class="main__product_goods-itemImage" src="image/product/prodItem4-7.png">
+                    <p class="main__product_goods-itemText">Бижутерия</p>
+                </div>
+                <div class="main__product_goods-item">
+                    <img class="main__product_goods-itemImage" src="image/product/prodItem5.png">
+                    <p class="main__product_goods-itemText">Гель-лаки</p>
+                </div>
+                <div class="main__product_goods-item">
+                    <img class="main__product_goods-itemImage" src="image/product/prodItem6.png">
+                    <p class="main__product_goods-itemText">Украшения для волос</p>
+                </div>
+                <div class="main__product_goods-item">
+                    <img class="main__product_goods-itemImage" src="image/product/prodItem4-7.png">
+                    <p class="main__product_goods-itemText">Оборудование для парикмахерских</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="popup">
+        <div class="popup__container">
+            <h2 class="popup__title">Напиши нам</h2>
+            <img class="popup__buttonClose" src="image/closeButton.png">
+            <form class="popup__form">
+                <h2 class="popup__name">Имя: <span class="popup__error popup__error_hidden" id='popup__input_name-error'>Неверно заполненое поле</span></h2>
+                <input class="popup__input_name popup__input test" type="text" required placeholder="Имя Фамилия " minlength="5" maxlength="40"><img class="popup__goodImage  popup__error_hidden" id='popup__input_name-good' src="image/ok.png"><img class="popup__errorImage popup__error_hidden" id='popup__input_name-error' src="image/error.png">
+                <h2 class="popup__name">Телефон: <span class="popup__error popup__error_hidden" id='popup__input_phone-error'>Неверно заполненое поле</span></h2>
+                <input class="popup__input_phone popup__input test" type="tel"   required placeholder="89876543211" minlength="11" maxlength="14" pattern="\+?[0-9\s\-\(\)]+"><img class="popup__goodImage  popup__error_hidden" id='popup__input_phone-good' src="image/ok.png"><img class="popup__errorImage popup__error_hidden" id='popup__input_phone-error' src="image/error.png">
+                <h2 class="popup__name">Эл. почта: <span class="popup__error popup__error_hidden" id='popup__input_email-error'>Неверно заполненое поле</span></h2>
+                <input class="popup__input_email popup__input test" type="email" required placeholder="email@email.ru" minlength="11" maxlength="40"><img class="popup__goodImage  popup__error_hidden" id='popup__input_email-good' src="image/ok.png"><img class="popup__errorImage popup__error_hidden" id='popup__input_email-error' src="image/error.png">
+                <h2 class="popup__name">Сообщение: <span class="popup__error popup__error_hidden" id='popup__input_text-error'>Неверно заполненое поле</span></h2>
+                <textarea class="popup__input_text test" type="text" required placeholder="Ваш текст" minlength="10" maxlength="200" required></textarea><img class="popup__goodImage  popup__error_hidden" id='popup__input_text-good'src="image/ok.png"><img class="popup__errorImage popup__error_hidden" id='popup__input_text-error' src="image/error.png">
+                <div class="popup__accept">
+                    <input class="popup__input_check test" type="checkbox" required>
+                    <p class="popup__info">Проставляя «галку» и далее нажимая кнопку «Принимаю», я даю согласие в его полном изложении на обработку через сайт своих персональных данных.</p>
+                </div>
+                <button class="popup__button popup__button_disablet" type="submit" disabled>Отправить</button>
+            </form>
+        </div>
+    </div>
+    <script src="page/index.js"></script>
+</body>
+</html>

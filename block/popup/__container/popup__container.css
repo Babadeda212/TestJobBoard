@@ -1,0 +1,11 @@
+.popup__container{
+    height: 560px;
+    max-width: 504px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 54px;
+    border-radius: 15px;
+    position: relative;
+    margin: 200px auto 0;
+}

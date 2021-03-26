@@ -1,0 +1,18 @@
+.popup__button{
+    width: 300px;
+    height: 50px;
+    background: #F08B98;
+    border-radius: 100px;
+    opacity: 1;
+    color: white;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    font-family:"MuseCyrl700";
+    margin-bottom: 30px;
+    outline:none;
+    border: hidden;
+}
+.popup__button:hover{
+    cursor: pointer;
+}
