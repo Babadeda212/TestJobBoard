@@ -1,8 +1,0 @@
-.main__title{
-    display: flex;
-    flex-direction: column;
-    margin-top: 285px;
-    align-items: center;
-    position: fixed;
-    z-index: -1;
-}

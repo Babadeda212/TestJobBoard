@@ -1,0 +1,6 @@
+.bg-video{
+    width: 1680px;
+    height: 100%;
+    position: fixed;
+    z-index: -2;
+}

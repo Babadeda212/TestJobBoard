@@ -1,0 +1,5 @@
+.main__product_goods{
+    display: flex;
+    margin: auto;
+    max-width: fit-content;
+}
