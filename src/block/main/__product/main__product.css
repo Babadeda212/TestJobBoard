@@ -8,3 +8,14 @@
     height: 100%;
     top: 425px;
 }
+
+@media screen and (max-width: 1300px){
+    .main__product{
+        width: 99%;
+    }
+}
+@media screen and (max-width: 961px){
+    .main__product{
+        margin-top: 116px;
+    }
+}

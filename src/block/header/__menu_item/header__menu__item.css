@@ -3,10 +3,19 @@
     justify-content: center;
     align-items: center;
     margin-left: 30px;
+    height: 100px;
 }
 .header__menu_item:nth-child(1){
     margin-left:0;
 }
 .header__menu_item:last-child{
     margin-left:60px;
+}
+@media screen and (max-width:1000px){
+    .header__menu_item{
+        margin-left:5px;
+    }
+    .header__menu_item:last-child{
+        margin-left:5px;
+    }
 }

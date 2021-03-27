@@ -1,5 +1,26 @@
 .main__product_goods{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,160px);
     margin: auto;
-    max-width: fit-content;
+    max-width: 1120px;
+}
+@media screen and (max-width: 1136px){
+    .main__product_goods{
+        max-width: 640px;
+    }
+}
+@media screen and (max-width: 693px){
+    .main__product_goods{
+        max-width: 480px;
+    }
+}
+@media screen and (max-width: 502px){
+    .main__product_goods{
+        max-width: 320px;
+    }
+}
+@media screen and (max-width: 407px){
+    .main__product_goods{
+        max-width: 160px;
+    }
 }

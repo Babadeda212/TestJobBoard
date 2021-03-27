@@ -1,0 +1,7 @@
+.header__menu_down-table{
+    display: flex;
+    max-width: 1300px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}

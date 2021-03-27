@@ -1,0 +1,22 @@
+.header__menu_down-item{
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    font-family:"MuseCyrl700";
+    border-right: 1px solid rgba(240, 139, 152, 0.15);
+    width: fit-content;
+    padding-right: 120px;
+}
+.header__menu_down-item:first-child{
+    padding-left:0;
+}
+@media screen and (max-width:1379px){
+    .header__menu_down-item{
+        padding-right: 20px;
+    } 
+}
+@media screen and (max-width:1024px){
+    .header__menu_down-item{
+        padding-right: 20px;
+    } 
+}

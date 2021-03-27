@@ -1,0 +1,9 @@
+.header__menu_down-link{
+    font-size: 14px;
+    line-height: 22px;
+    font-family:"MuseCyrl";
+    margin-top: 15px;
+    list-style-type: none;
+    mix-blend-mode: normal;
+    border-bottom: 1px solid rgba(250, 115, 133,0.3);
+}

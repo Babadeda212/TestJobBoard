@@ -6,6 +6,7 @@ const popup = document.querySelector('.popup');
 const form = document.querySelector('.popup__form');
 const popupButton = document.querySelector('.popup__button');
 const test =Array.from(form.querySelectorAll('.test'));
+const headerPhone = document.querySelector('.header__menu_phone');
 
 
 function someInput(){
@@ -36,6 +37,9 @@ function validate (elem,inp){
 }
 
 function openPopup(selec){
+    if(window.innerWidth<=961){
+        headerPhone.classList.add('header__menu_phone-white');
+    }
     selec.classList.add('popup__open');
     document.addEventListener("keydown", (evt)=>{
         if(evt.key=='Escape')
@@ -93,6 +97,9 @@ function closePopup(selec){
         if(evt.key=='Escape')
         closePopup(popup);
     });
+    if(window.innerWidth<=961){
+        headerPhone.classList.remove('header__menu_phone-white');
+    }
 };
 
 buttonOpen.addEventListener('click',()=>{
@@ -114,9 +121,50 @@ form.addEventListener('submit',(evt)=>{
 })
 
 const bgBlur = document.querySelector('.bg-blur');
+
 window.addEventListener('scroll',()=>{
     bgBlur.style.opacity = pageYOffset/350;
-    if(bgBlur.style.opacity>0.99)
-    bgBlur.style.opacity=0.999;
+    if(bgBlur.style.opacity>0.99){
+        bgBlur.style.opacity=0.999;
+        headerPhone.classList.add('header__menu_phone-white');
+    }
+    else{
+        headerPhone.classList.remove('header__menu_phone-white');
+    }
+
 })
-console.log(123);
+const kosmet = document.querySelectorAll('.header__menu_item');
+const indi = document.querySelectorAll('.header__menu_down-indik');
+const menu =Array.from(document.querySelectorAll('.header__menu_down'));
+
+
+
+function addHoverMenu(selecName,selecMenu,ind){
+    selecName.addEventListener('mouseover',()=>{
+        selecMenu.style.display='block';
+        const x = selecName.getBoundingClientRect().left
+        ind.style.left= x+70+'px';
+        ind.style.top=-11+'px';
+    })
+    selecName.addEventListener('mouseleave',()=>{
+        selecMenu.style.display='none';
+    })
+}
+for(var i=0;i<=2;i++){
+    addHoverMenu(kosmet[i],menu[i],indi[i]);
+}
+const popupMenuPhone = document.querySelector('.popup__menu');
+const menuButtonPhone = document.querySelector('.header__menu_phone-button');
+const buttonOP = document.querySelector('.header__menu_phone-buttonClose');
+menuButtonPhone.addEventListener('click',()=>{
+    popupMenuPhone.classList.add('popup__open_phone');
+    headerPhone.classList.add('header__menu_phone-white');
+    buttonOP.classList.add('header__button_open');
+    menuButtonPhone.classList.add('header__button_close');
+})
+buttonOP.addEventListener('click',()=>{
+    popupMenuPhone.classList.remove('popup__open_phone');
+    headerPhone.classList.remove('header__menu_phone-white');
+    buttonOP.classList.remove('header__button_open');
+    menuButtonPhone.classList.remove('header__button_close');
+})

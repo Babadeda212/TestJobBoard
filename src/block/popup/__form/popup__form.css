@@ -23,3 +23,18 @@ padding: 20px 20px 0;
     background: #F08B98;
     border-radius: 24px;
 }
+@media screen and (max-width: 961px){
+    .popup__form{
+        width: 92%;
+    }
+}
+@media screen and (max-width: 550px){
+    .popup__form{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 390px){
+    .popup__form{
+        width: 87%;
+    }
+}

@@ -6,3 +6,13 @@
     position: fixed;
     z-index: 2;
 }
+@media screen and (max-width: 560px){
+    .main__title{
+        margin-top: 185px;
+    }
+}
+@media screen and (max-width: 430px){
+    .main__title{
+        margin-top: 270px;
+    }
+}

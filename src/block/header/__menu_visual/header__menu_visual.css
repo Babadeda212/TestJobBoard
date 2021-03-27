@@ -1,0 +1,13 @@
+.header__menu_visual{
+    display: flex;
+    max-width: 1300px;
+    max-height: 70px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+@media screen and (max-width:961px){
+    .header__menu_visual{
+        display: none;
+    }
+}

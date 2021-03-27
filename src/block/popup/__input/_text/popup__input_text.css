@@ -12,3 +12,8 @@
     padding: 13px 20px;
     resize: none;
 }
+@media screen and (max-width:961px){
+    .popup__input_text{
+        width: 100%;
+    }
+}

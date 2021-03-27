@@ -1,4 +1,6 @@
 .bg-set{
+    width: 2000px;
+    height: 100%;
     position: fixed;
-    position: -3;
+    z-index:-2;
 }
