@@ -6,13 +6,21 @@
     position: fixed;
     z-index: 2;
 }
-@media screen and (max-width: 560px){
+@media screen and (max-width: 961px){
     .main__title{
         margin-top: 185px;
     }
 }
+@media screen and (max-width: 542px){
+    .main__title{
+        margin-top: 126px;
+        margin-left: 7px;
+    }
+}
+
 @media screen and (max-width: 430px){
     .main__title{
-        margin-top: 270px;
+        margin-top: 226px;
+        margin-left: 7px;
     }
 }

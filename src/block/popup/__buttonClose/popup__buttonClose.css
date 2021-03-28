@@ -1,6 +1,11 @@
 .popup__buttonClose{
-    margin:20px 36px 0 auto;
+    margin:20px 36px 0 196px;
 }
 .popup__buttonClose:hover{
     cursor: pointer;
+}
+@media screen and (max-width:961px){
+    .popup__buttonClose{
+        margin: 20px 36px 0 auto;
+    }
 }

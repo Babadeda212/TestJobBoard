@@ -4,9 +4,16 @@
     left: 0;
     right: 0;
     margin: 0 auto;
+    width: 100%;
+}
+@media screen and (max-width:650px){
+    .bg-phone{
+        width: auto;
+    }
 }
 @media screen and (max-width:430px){
     .bg-phone{
-        left: -110px;
-    }
+        left: -163px;
+        top:-10px;
+        }
 }

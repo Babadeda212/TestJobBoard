@@ -9,3 +9,8 @@
     box-shadow: 0px 0px 15px #EAEAEA;
     border-radius: 30px;
 }
+@media screen and (max-width: 354px){
+    .main__product_goods-item{
+        width: 130px;
+    }
+}

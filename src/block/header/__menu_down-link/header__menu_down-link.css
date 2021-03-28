@@ -7,3 +7,7 @@
     mix-blend-mode: normal;
     border-bottom: 1px solid rgba(250, 115, 133,0.3);
 }
+.header__menu_down-link:hover{
+    color:  #F08B98;
+    cursor: pointer;
+}

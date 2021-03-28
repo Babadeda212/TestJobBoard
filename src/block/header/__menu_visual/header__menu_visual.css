@@ -1,8 +1,8 @@
 .header__menu_visual{
     display: flex;
-    max-width: 1300px;
+    max-width: 1170px;
     max-height: 70px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
