@@ -1,7 +1,6 @@
-.header__menu_down-table{
+.popup__header{
     display: flex;
-    max-width: 1170px;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin-bottom: 15px;
 }

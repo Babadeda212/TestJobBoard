@@ -5,7 +5,7 @@
     font-family:"MuseCyrl700";
     border-right: 1px solid rgba(240, 139, 152, 0.15);
     width: fit-content;
-    padding-right: 120px;
+    padding-right: 73px;
 }
 .header__menu_down-item:first-child{
     padding-left:0;

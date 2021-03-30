@@ -1,9 +1,11 @@
 .header__icons_icon{
+    width: 30px;
+    height: 26px;
     margin-right: 20px;
+}
+.header__icons_icon:nth-of-type(5){
+    margin-right: 0;
 }
 .header__icons_icon:last-child{
     margin-right: 0;
-}
-.header__icons_icon:hover{
-    background-color: #F08B98;
 }

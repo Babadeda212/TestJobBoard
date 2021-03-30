@@ -3,6 +3,10 @@
     height: 160px;
     text-align: center;
     margin-bottom: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .main__product_goods-item:hover{
     background: #FFFFFF;

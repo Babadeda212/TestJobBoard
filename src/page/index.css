@@ -30,6 +30,8 @@
 @import url(../block/header/__menu_phone-buttonClose/header__menu_phone-buttonClose.css);
 @import url(../block/header/__button_open/header__button_open.css);
 @import url(../block/header/__button_close/header__button_close.css);
+@import url(../block/header/__icons/__icons_hide/header__icons_hide.css);
+@import url(../block/header/__icons/__icons_open/header__icons_open.css);
 
 @import url(../block/bg/bg.css);
 @import url(../block/bg/-blur/bg-blur.css);
@@ -71,6 +73,7 @@
 @import url(../block/popup/__error_open/popup__error_open.css);
 @import url(../block/popup/__error_hidden/popup__error_hidden.css);
 @import url(../block/popup/__button_disablet/popup__button_disablet.css);
+@import url(../block/popup/__header/popup__header.css);
 
 @import url(../block/popup/__menu/popup__menu.css);
 @import url(../block/popup/__open_phone/popup__open_phone.css);

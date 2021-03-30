@@ -54,7 +54,7 @@ function openPopup(selec){
         closePopup(popup);
     });
     imputs.forEach(element => {
-        element.addEventListener('input',()=>{
+        element.addEventListener('blur',()=>{
             const inp = element.classList;
             if(someInput()){
                 console.log(popupButton);
@@ -68,7 +68,7 @@ function openPopup(selec){
             validate(element,inp[0]);
         });
     });
-    check.addEventListener('input', ()=>{
+    check.addEventListener('blur', ()=>{
         if(someInput()){
             console.log(popupButton);
             popupButton.classList.remove('popup__button_disablet');
@@ -151,3 +151,27 @@ buttonOP.addEventListener('click',()=>{
     buttonOP.classList.remove('header__button_open');
     menuButtonPhone.classList.remove('header__button_close');
 })
+
+
+
+const icons = document.querySelectorAll('.header__icons_icon');
+
+for(var i=0;i<=5;i++){
+    const x = icons[i];
+    const y = icons[i+1];
+    const a = icons[i-1];
+    if(i===0||i%2===0){
+        x.addEventListener('mouseover',()=>{
+            x.classList.add('header__icons_hide');
+            y.classList.remove('header__icons_hide');
+        })
+    }
+    else{
+        x.addEventListener('mouseout',()=>{
+            x.classList.add('header__icons_hide');
+            a.classList.remove('header__icons_hide');
+        })
+    }
+}
+    
+

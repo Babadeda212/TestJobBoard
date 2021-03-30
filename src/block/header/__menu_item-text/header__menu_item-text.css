@@ -3,7 +3,7 @@
     line-height: 19px;
     color: #000000;
     margin: 0 5px 0 3px;
-    font-family:"MuseCyrl700";
+    font-family:"MuseCyrl";
 }
 .header__menu_item-text:hover{
     cursor: pointer;

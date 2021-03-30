@@ -134,8 +134,11 @@
             </div>
             <div class="header__icons">
                 <img class="header__icons_icon" src="<%=require('./image/header/backetIco.png')%>" alt="Корзина">
+                <img class="header__icons_icon header__icons_hide" src="<%=require('./image/header/backetHover.png')%>" alt="Корзина">
                 <img class="header__icons_icon" src="<%=require('./image/header/favoritsIco.png')%>" alt="Сердечко">
+                <img class="header__icons_icon header__icons_hide" src="<%=require('./image/header/favoritHover.png')%>" alt="Сердечко">
                 <img class="header__icons_icon" src="<%=require('./image/header/loginIco.png')%>" alt="Логин">
+                <img class="header__icons_icon header__icons_hide" src="<%=require('./image/header/loginHover.png')%>" alt="Логин">
             </div>
         </div>
         <div class="header__menu_phone">
@@ -194,9 +197,9 @@
     </main>
     <div class="popup__menu">
         <div class="popup__menu_icons">
-            <img class="popup__icons-icon" src="<%=require('./image/header/favoritsIco.png')%>" alt="Сердечко">
-            <img class="popup__icons-icon" src="<%=require('./image/header/backetIco.png')%>"  alt="Корзина">
-            <img class="popup__icons-icon" src="<%=require('./image/header/loginIco.png')%>" alt="Логин">>
+            <img class="popup__icons-icon" src="<%=require('./image/header/favoritHover.png')%>" alt="Сердечко">
+            <img class="popup__icons-icon" src="<%=require('./image/header/backetHover.png')%>"  alt="Корзина">
+            <img class="popup__icons-icon" src="<%=require('./image/header/loginHover.png')%>" alt="Логин">
         </div>
         <div class="popup__menu_grop">
             <div class="popup__menu_grop-item">
@@ -222,11 +225,13 @@
     </div>
     <div class="popup">
         <div class="popup__container">
-            <h2 class="popup__title">Напиши нам</h2>
-            <img class="popup__buttonClose" src="<%=require('./image/closeButton.png')%>" alt="Закрыть">
-            <form class="popup__form">
+           <form class="popup__form">
+               <div class="popup__header">
+                <h2 class="popup__title">Напиши нам</h2>
+                <img class="popup__buttonClose" src="<%=require('./image/closeButton.png')%>" alt="Закрыть">    
+               </div>
                 <h2 class="popup__name">Имя: <span class="popup__error popup__error_hidden" id='popup__input_name-error'>Неверно заполненое поле</span></h2>
-                <input class="popup__input_name popup__input test" type="text" required placeholder="Имя Фамилия " minlength="5" maxlength="40"><img class="popup__goodImage  popup__error_hidden" id='popup__input_name-good' src="<%=require('./image/ok.png')%>" alt="Правильно"><img class="popup__errorImage popup__error_hidden" id='popup__input_name-error' src="<%=require('./image/error.png')%>" alt="НеВерно">
+                <input class="popup__input_name popup__input test" type="text" required placeholder="Имя Фамилия " minlength="3" maxlength="40"><img class="popup__goodImage  popup__error_hidden" id='popup__input_name-good' src="<%=require('./image/ok.png')%>" alt="Правильно"><img class="popup__errorImage popup__error_hidden" id='popup__input_name-error' src="<%=require('./image/error.png')%>" alt="НеВерно">
                 <h2 class="popup__name">Телефон: <span class="popup__error popup__error_hidden" id='popup__input_phone-error'>Неверно заполненое поле</span></h2>
                 <input class="popup__input_phone popup__input test" type="tel"   required placeholder="89876543211" minlength="11" maxlength="14" pattern="\+?[0-9\s\-\(\)]+"><img class="popup__goodImage  popup__error_hidden" alt="Правильно" id='popup__input_phone-good' src="<%=require('./image/ok.png')%>"><img class="popup__errorImage popup__error_hidden" id='popup__input_phone-error'alt="НеВерно" src="<%=require('./image/error.png')%>">
                 <h2 class="popup__name">Эл. почта: <span class="popup__error popup__error_hidden" id='popup__input_email-error'>Неверно заполненое поле</span></h2>
