@@ -1,5 +1,0 @@
-.popup__open_phone{
-    visibility: visible;
-    opacity: 1;
-    transition: opacity .3s ease-in-out,visibility .3s ease-in-out;
-}

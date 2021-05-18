@@ -1,8 +1,0 @@
-.popup__input_phone{
-    width: 195px;
-}
-@media screen and (max-width:961px){
-    .popup__input_phone{
-        width: 60%;
-    }
-}

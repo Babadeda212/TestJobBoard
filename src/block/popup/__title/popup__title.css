@@ -1,13 +1,5 @@
 .popup__title{
-    width: 205px;
-    margin: 0;
-    font-size: 28px;
-    line-height: 34px;
-    color: #000000;
-    font-family:"MuseCyrl700";
-}
-@media screen and (max-width:390px){
-    .popup__title{
-        margin-left: 10px;
-    }
+    color: black;
+    font-size: 18pt;
+    font-family: 'Inter', sans-serif;
 }

@@ -1,11 +1,3 @@
-.popup__buttonClose{
-    margin:0;
-}
 .popup__buttonClose:hover{
     cursor: pointer;
-}
-@media screen and (max-width:961px){
-    .popup__buttonClose{
-        margin: 20px 36px 0 auto;
-    }
 }

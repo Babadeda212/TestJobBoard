@@ -1,0 +1,8 @@
+.main__board_column{
+    width: 300px;
+    height: 100%;
+    border: 2px solid black;
+}
+.center{
+    margin: 0 5px 0;
+}

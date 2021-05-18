@@ -2,249 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Бутик</title>
+    <title>Kanban board</title>
 </head>
-<body class="root">
-    <header class="header">
-        <div class="header__menu_visual">
-            <img class="header__logo" src="<%=require('./image/header/logo.png')%>" alt="Логотип">
-            <div class="header__menu">
-                <div class="header__menu_item">
-                    <img class="header__menu_item-image" src="<%=require('./image/header/cosmeticsIco.png')%>" alt="Бутылочка">
-                    <h2 class="header__menu_item-text">Косметика</h2>
-                    <img class="header__menu_item-arrow" src="<%=require('./image/header/arrowIco.png')%>" alt="стрелочка">
-                    <div class="header__menu_down">
-                        <img class="header__menu_down-indik" src="<%=require('./image/menuInd.png')%>" alt="...">
-                        <div class="header__menu_down-table">
-                            <ul class="header__menu_down-item">
-                                <h2 class="header__menu_down-title">Косметика 1</h2>
-                                <li class="header__menu_down-link">Ссылка 1</li>
-                                <li class="header__menu_down-link">Cсылка 2</li>
-                                <li class="header__menu_down-link">Ссылка 3</li>
-                                <li class="header__menu_down-link">Ссылка 4</li>
-                            </ul>
-                            <ul class="header__menu_down-item">
-                                <h2 class="header__menu_down-title">Косметика 2</h2>
-                                <li class="header__menu_down-link">Ссылка 1</li>
-                                <li class="header__menu_down-link">Cсылка 2</li>
-                                <li class="header__menu_down-link">Ссылка 3</li>
-                                <li class="header__menu_down-link">Ссылка 4</li>
-                            </ul>
-                            <ul class="header__menu_down-item">
-                                <h2 class="header__menu_down-title">Косметика 3</h2>
-                                <li class="header__menu_down-link">Ссылка 1</li>
-                                <li class="header__menu_down-link">Cсылка 2</li>
-                                <li class="header__menu_down-link">Ссылка 3</li>
-                                <li class="header__menu_down-link">Ссылка 4</li>
-                            </ul>
-                            <ul class="header__menu_down-item">
-                                <h2 class="header__menu_down-title">Косметика 4</h2>
-                                <li class="header__menu_down-link">Ссылка 1</li>
-                                <li class="header__menu_down-link">Cсылка 2</li>
-                                <li class="header__menu_down-link">Ссылка 3</li>
-                                <li class="header__menu_down-link">Ссылка 4</li>
-                            </ul>
-                            <img src="<%=require('./image/nails.png')%>" class="header__menu_nails" alt="Акция">
-                        </div>
+<body>
+    <div class="page">
+        <header class="header">
+            <img class="header__logo" src="" alt="Логотоп">
+        </header>
+        <main class="main">
+            <div class="main__board">
+                <div class="main__board_column">
+                    <h2 class="main__board_column-header">
+                        to Do
+                    </h2>
+                    <div class="main__board_column-tasks left">
+
                     </div>
                 </div>
-                <div class="header__menu_item">
-                    <img class="header__menu_item-image" src="<%=require('./image/header/equipmentIco.png')%>" alt="Фен">
-                    <h2 class="header__menu_item-text">Оборудование</h2>
-                    <img class="header__menu_item-arrow" src="<%=require('./image/header/arrowIco.png')%>" alt="Стрелочка">
-                    <div class="header__menu_down">
-                        <img class="header__menu_down-indik" src="<%=require('./image/menuInd.png')%>" alt="...">
-                        <div class="header__menu_down-table">
-                            <ul class="header__menu_down-item">
-                                <h2 class="header__menu_down-title">Оборудование 1</h2>
-                                <li class="header__menu_down-link">Ссылка 1</li>
-                                <li class="header__menu_down-link">Cсылка 2</li>
-                                <li class="header__menu_down-link">Ссылка 3</li>
-                                <li class="header__menu_down-link">Ссылка 4</li>
-                            </ul>
-                            <ul class="header__menu_down-item">
-                                <h2 class="header__menu_down-title">Оборудование 2</h2>
-                                <li class="header__menu_down-link">Ссылка 1</li>
-                                <li class="header__menu_down-link">Cсылка 2</li>
-                                <li class="header__menu_down-link">Ссылка 3</li>
-                                <li class="header__menu_down-link">Ссылка 4</li>
-                            </ul>
-                            <ul class="header__menu_down-item">
-                                <h2 class="header__menu_down-title">Оборудование 3</h2>
-                                <li class="header__menu_down-link">Ссылка 1</li>
-                                <li class="header__menu_down-link">Cсылка 2</li>
-                                <li class="header__menu_down-link">Ссылка 3</li>
-                                <li class="header__menu_down-link">Ссылка 4</li>
-                            </ul>
-                            <ul class="header__menu_down-item">
-                                <h2 class="header__menu_down-title">Оборудование 4</h2>
-                                <li class="header__menu_down-link">Ссылка 1</li>
-                                <li class="header__menu_down-link">Cсылка 2</li>
-                                <li class="header__menu_down-link">Ссылка 3</li>
-                                <li class="header__menu_down-link">Ссылка 4</li>
-                            </ul>
-                            <img src="<%=require('./image/nails.png')%>" class="header__menu_nails" alt="Акция">
-                        </div>
+                <div class="main__board_column">
+                    <h2 class="main__board_column-header">
+                        in Progress
+                    </h2>
+                    <div class="main__board_column-tasks center">
+
                     </div>
                 </div>
-                <div class="header__menu_item">
-                    <img class="header__menu_item-image" src="<%=require('./image/header/fineryIco.png')%>" alt="Кольцо">
-                    <h2 class="header__menu_item-text">Украшения</h2>
-                    <img class="header__menu_item-arrow" src="<%=require('./image/header/arrowIco.png')%>" alt="Стрелочка">
-                    <div class="header__menu_down">
-                        <img class="header__menu_down-indik" src="<%=require('./image/menuInd.png')%>" alt="...">
-                        <div class="header__menu_down-table">
-                            <ul class="header__menu_down-item">
-                                <h2 class="header__menu_down-title">Украшения 1</h2>
-                                <li class="header__menu_down-link">Ссылка 1</li>
-                                <li class="header__menu_down-link">Cсылка 2</li>
-                                <li class="header__menu_down-link">Ссылка 3</li>
-                                <li class="header__menu_down-link">Ссылка 4</li>
-                            </ul>
-                            <ul class="header__menu_down-item">
-                                <h2 class="header__menu_down-title">Украшения 2</h2>
-                                <li class="header__menu_down-link">Ссылка 1</li>
-                                <li class="header__menu_down-link">Cсылка 2</li>
-                                <li class="header__menu_down-link">Ссылка 3</li>
-                                <li class="header__menu_down-link">Ссылка 4</li>
-                            </ul>
-                            <ul class="header__menu_down-item">
-                                <h2 class="header__menu_down-title">Украшения 3</h2>
-                                <li class="header__menu_down-link">Ссылка 1</li>
-                                <li class="header__menu_down-link">Cсылка 2</li>
-                                <li class="header__menu_down-link">Ссылка 3</li>
-                                <li class="header__menu_down-link">Ссылка 4</li>
-                            </ul>
-                            <ul class="header__menu_down-item">
-                                <h2 class="header__menu_down-title">Украшения 4</h2>
-                                <li class="header__menu_down-link">Ссылка 1</li>
-                                <li class="header__menu_down-link">Cсылка 2</li>
-                                <li class="header__menu_down-link">Ссылка 3</li>
-                                <li class="header__menu_down-link">Ссылка 4</li>
-                            </ul>
-                            <img src="<%=require('./image/nails.png')%>" class="header__menu_nails" alt="Акция">
-                        </div>
+                <div class="main__board_column">
+                    <h2 class="main__board_column-header">
+                        Done
+                    </h2>
+                    <div class="main__board_column-tasks  right">
+
                     </div>
                 </div>
-                <div class="header__menu_item">
-                    <img class="header__menu_item-image" src="<%=require('./image/header/blogIco.png')%>" alt="Девочка">
-                    <h2 class="header__menu_item-text">Бьюти-бложик</h2>
-                </div>
             </div>
-            <div class="header__icons">
-                <img class="header__icons_icon" src="<%=require('./image/header/backetIco.png')%>" alt="Корзина">
-                <img class="header__icons_icon header__icons_hide" src="<%=require('./image/header/backetHover.png')%>" alt="Корзина">
-                <img class="header__icons_icon" src="<%=require('./image/header/favoritsIco.png')%>" alt="Сердечко">
-                <img class="header__icons_icon header__icons_hide" src="<%=require('./image/header/favoritHover.png')%>" alt="Сердечко">
-                <img class="header__icons_icon" src="<%=require('./image/header/loginIco.png')%>" alt="Логин">
-                <img class="header__icons_icon header__icons_hide" src="<%=require('./image/header/loginHover.png')%>" alt="Логин">
-            </div>
-        </div>
-        <div class="header__menu_phone">
-            <img src="<%=require('./image/menuBattonPhone.png')%>" class="header__menu_phone-button" alt="Меню">
-            <img src="<%=require('./image/closeButton.png')%>" class="header__menu_phone-buttonClose" alt="Закрыть">
-            <img src="<%=require('./image/logoPhone.svg')%>" class="header__menu_phone-logo" alt="Логотип">
-            <img src="<%=require('./image/header/backetIco.png')%>" class="header__menu_phone-backet" alt="Корзина">
-        </div>
-    </header>
-    <main class="main">
-        <div class="bg">
-            <img src="<%=require('./image/bgPhone.png')%>" class="bg-phone" alt="Фон">
-            <video autoplay muted loop class="bg-video">
-                <source src="<%=require('./video/video.mp4')%>" type="video/mp4">
-            </video>
-            <img src="<%=require('./image/bg_video.png')%>"  class="bg-set" alt="Сетка">
-            <div class="bg-blur"></div>
-        </div>
-        <div class="main__title">
-            <h1 class="main__title_text">Ты — классная!</h1>
-            <button class="main__title_button">Обратная связь</button>
-        </div>
-        <div class="main__product">
-            <p class="main__product_text">Мы выбрали для тебя самые классные товары из нашего интернет-магазина:</p>
-            <div class="main__product_goods">
-                <div class="main__product_goods-item">
-                    <img class="main__product_goods-itemImage" src="<%=require('./image/product/prodItem1.png')%>" alt="Продукт">
-                    <p class="main__product_goods-itemText">Лаки для ногтей</p>
+            <button class="main__button">Создать записку</button>
+        </main>
+        <footer class="footer">
+
+        </footer>
+        <div class="popup">
+            <div class="popup__container">
+                <div class="popup__header">
+                    <h2 class="popup__title">Создать записку</h2>
+                    <img class="popup__buttonClose" src="<%=require('./image/closeButton.png')%>" alt="Закрыть">    
                 </div>
-                <div class="main__product_goods-item">
-                    <img class="main__product_goods-itemImage" src="<%=require('./image/product/prodItem2.png')%>" alt="Продукт">
-                    <p class="main__product_goods-itemText">Дизайн для ногтей</p>
-                </div>
-                <div class="main__product_goods-item">
-                    <img class="main__product_goods-itemImage" src="<%=require('./image/product/prodItem3.png')%>" alt="Продукт">
-                    <p class="main__product_goods-itemText">Инструменты для маникюра и педикюра</p>
-                </div>
-                <div class="main__product_goods-item">
-                    <img class="main__product_goods-itemImage" src="<%=require('./image/product/prodItem4-7.png')%>" alt="Продукт">
-                    <p class="main__product_goods-itemText">Бижутерия</p>
-                </div>
-                <div class="main__product_goods-item">
-                    <img class="main__product_goods-itemImage" src="<%=require('./image/product/prodItem5.png')%>" alt="Продукт">
-                    <p class="main__product_goods-itemText">Гель-лаки</p>
-                </div>
-                <div class="main__product_goods-item">
-                    <img class="main__product_goods-itemImage" src="<%=require('./image/product/prodItem6.png')%>" alt="Продукт">
-                    <p class="main__product_goods-itemText">Украшения для волос</p>
-                </div>
-                <div class="main__product_goods-item">
-                    <img class="main__product_goods-itemImage" src="<%=require('./image/product/prodItem4-7.png')%>" alt="Продукт">
-                    <p class="main__product_goods-itemText">Оборудование для парикмахерских</p>
-                </div>
+                <div class="popup__inputs">
+                    <div class="popup__inputText">
+                        <h2 class="popup__title">Название задачи:</h2>
+                        <input class="popup__input tasksName" type="text">
+                        <h2 class="popup__title">Текст:</h2>
+                        <input class="popup__input text" type="text">
+                        <h2 class="popup__title">Кто выполнит:</h2>
+                        <input class="popup__input name" type="text">
+                        <h2 class="popup__title">Время:</h2>
+                        <input class="popup__input time" type="text">
+                    </div>
+                    <div class="popup__checkBoard">
+                        <div class="popup__grop">
+                            <h2 class="popup__title">Цвет:</h2>
+                            <input class="popup__input color" type="color" value="#f40101">
+                        </div>
+                        <h2 class="popup__title">Выбрать доску</h2>
+                        <div class="popup__grop">
+                            <h2 class="popup__grop_title">to Do</h2>
+                            <input type="radio" name="board" id="board" value="1" class="popup__radio" checked>
+                        </div>
+                        <div class="popup__grop">
+                            <h2 class="popup__grop_title">in Progress</h2>
+                            <input type="radio" name="board" id="board" value="2" class="popup__radio">
+                        </div>
+                        <div class="popup__grop">
+                            <h2 class="popup__grop_title">Done</h2>
+                            <input type="radio" name="board" id="board" value="3" class="popup__radio">
+                        </div>
+                    </div>
+                    </div>
+
+                <button class="popup__button button" type="click" >Готово</button>
             </div>
         </div>
-    </main>
-    <div class="popup__menu">
-        <div class="popup__menu_icons">
-            <img class="popup__icons-icon" src="<%=require('./image/header/favoritHover.png')%>" alt="Сердечко">
-            <img class="popup__icons-icon" src="<%=require('./image/header/backetHover.png')%>"  alt="Корзина">
-            <img class="popup__icons-icon" src="<%=require('./image/header/loginHover.png')%>" alt="Логин">
-        </div>
-        <div class="popup__menu_grop">
-            <div class="popup__menu_grop-item">
-                <img class="header__menu_item-image" src="<%=require('./image/header/cosmeticsIco.png')%>" alt="Бутылочка">
-                <h2 class="header__menu_item-text">Косметика</h2>
-                <img class="popup__menu_item-arrow-popup" src="<%=require('./image/header/arrowRight.png')%>" alt="стрелочка">
+        <template id="card">
+            <div class="tasks">
+                <h2 class="tasks__title">
+                </h2>
+                <p class="tasks__text">
+                </p>
+                <h2 class="tasks__people">
+
+                </h2>
+                <p class="tasks__time">
+                </p>
             </div>
-            <div class="popup__menu_grop-item">
-                <img class="header__menu_item-image" src="<%=require('./image/header/equipmentIco.png')%>" alt="Фен">
-                <h2 class="header__menu_item-text">Оборудование</h2>
-                <img class="popup__menu_item-arrow-popup" src="<%=require('./image/header/arrowRight.png')%>" alt="Стрелочка">
-            </div>
-            <div class="popup__menu_grop-item">
-                <img class="popup__menu_item-image" src="<%=require('./image/header/fineryIco.png')%>" alt="Кольцо">
-                <h2 class="header__menu_item-text">Украшения</h2>
-                <img class="popup__menu_item-arrow-popup" src="<%=require('./image/header/arrowRight.png')%>" alt="Стрелочка">
-            </div>
-            <div class="popup__menu_grop-item">
-                <img class="header__menu_item-image" src="<%=require('./image/header/blogIco.png')%>" alt="Девочка">
-                    <h2 class="header__menu_item-text">Бьюти-бложик</h2>
-            </div>
-        </div>
+        </template>
     </div>
-    <div class="popup">
-        <div class="popup__container">
-           <form class="popup__form">
-               <div class="popup__header">
-                <h2 class="popup__title">Напиши нам</h2>
-                <img class="popup__buttonClose" src="<%=require('./image/closeButton.png')%>" alt="Закрыть">    
-               </div>
-                <h2 class="popup__name">Имя: <span class="popup__error popup__error_hidden" id='popup__input_name-error'>Неверно заполненое поле</span></h2>
-                <input class="popup__input_name popup__input test" type="text" required placeholder="Имя Фамилия " minlength="3" maxlength="40"><img class="popup__goodImage  popup__error_hidden" id='popup__input_name-good' src="<%=require('./image/ok.png')%>" alt="Правильно"><img class="popup__errorImage popup__error_hidden" id='popup__input_name-error' src="<%=require('./image/error.png')%>" alt="НеВерно">
-                <h2 class="popup__name">Телефон: <span class="popup__error popup__error_hidden" id='popup__input_phone-error'>Неверно заполненое поле</span></h2>
-                <input class="popup__input_phone popup__input test" type="tel"   required placeholder="89876543211" minlength="11" maxlength="14" pattern="\+?[0-9\s\-\(\)]+"><img class="popup__goodImage  popup__error_hidden" alt="Правильно" id='popup__input_phone-good' src="<%=require('./image/ok.png')%>"><img class="popup__errorImage popup__error_hidden" id='popup__input_phone-error'alt="НеВерно" src="<%=require('./image/error.png')%>">
-                <h2 class="popup__name">Эл. почта: <span class="popup__error popup__error_hidden" id='popup__input_email-error'>Неверно заполненое поле</span></h2>
-                <input class="popup__input_email popup__input test" type="email" required placeholder="email@email.ru" minlength="11" maxlength="40"><img class="popup__goodImage  popup__error_hidden" alt="Правильно" id='popup__input_email-good' src="<%=require('./image/ok.png')%>"><img class="popup__errorImage popup__error_hidden" id='popup__input_email-error' src="<%=require('./image/error.png')%>" alt="НеВерно">
-                <h2 class="popup__name">Сообщение:</h2>
-                <textarea class="popup__input_text "  placeholder="Ваш текст" minlength="10" maxlength="2000" ></textarea>
-                <div class="popup__accept">
-                    <input class="popup__input_check test" type="checkbox" required>
-                    <p class="popup__info">Проставляя «галку» и далее нажимая кнопку «Принимаю», я даю согласие в его полном изложении на обработку через сайт своих персональных данных.</p>
-                </div>
-                <button class="popup__button popup__button_disablet" type="submit" disabled>Отправить</button>
-            </form>
-        </div>
-    </div>
+
 </body>
 </html>
