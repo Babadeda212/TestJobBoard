@@ -19,6 +19,7 @@ const boards = Array.from(document.querySelectorAll('.main__board_column-tasks')
 let drugElem
 
 
+
 function allowDrop(evt) {
     evt.preventDefault();
 
@@ -42,6 +43,9 @@ function addCard(board,title,text,people,time,color){
     card.querySelector('.tasks__time').textContent=time;
     card.querySelector('.tasks').style.background = color;
     card.querySelector('.tasks').draggable = true;
+    card.querySelector('.tasks__delete').addEventListener(('click'),(evt)=>{
+        evt.target.parentNode.parentNode.remove();
+    });
     card.querySelector('.tasks').addEventListener('dragstart',(evt)=>{
         evt.target.classList.add('selected');
         drugElem = evt.target;
@@ -91,3 +95,4 @@ boards.forEach(element => {
         drop(evt);
     })
 });
+addCard(boardLeft,"Задание 1","Надо выполнить задание 1","Выполнит: Морозов Артем Алексеевич","с 21.02.13 по 22.03.14",'red');

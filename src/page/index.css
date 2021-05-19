@@ -11,6 +11,9 @@
 @import url(../block/main/__board/_column/main__board_column-tasks.css);
 
 @import url(../block/tasks/tasks.css);
+@import url(../block/tasks/__grop/tasks__grop.css);
+@import url(../block/tasks/__all/tasks__all.css);
+@import url(../block/tasks/__title/tasks__title.css);
 
 @import url(../block/popup/popup.css);
 @import url(../block/popup/__container/popup__container.css);
