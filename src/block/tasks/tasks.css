@@ -3,3 +3,7 @@
     width: 200px;
     margin: 10px;
 }
+.tasks:hover{
+    width: 208px;
+    height: 208px;
+}
