@@ -2,11 +2,12 @@
 .page{display:flex;flex-direction:column;align-items:center;width:100%;height:100%}
 .header{width:100%;height:50px}
 .main{display:flex;width:100%;justify-content:center;align-items:center;flex-direction:column}
-.main__board{width:90%;max-height:850px;display:flex;border:3px solid #000;padding:5px}
-.main__board_column{width:33%;height:100%;border:2px solid #000}.center{margin:0 5px}
-.main__board_column-header{margin:0;background-color:grey;height:100px;border-bottom:2px solid #000;text-align:center}
-.main__board_column-tasks{min-height:260px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center}
-.tasks{background-color:red;width:200px;margin:10px}
+.main__board{width:90%;max-height:850px;display:flex;border:3px solid #000;padding:5px;flex-direction:column}
+.main__board_column{border:2px solid #000;display:flex;height:100%;width:100%}
+.main__board_name{width:100%;display:flex;height:100%;border:2px solid #000}
+.main__board_column-header{margin:0;background-color:grey;width:34%;height:100px;border:2px solid #000;text-align:center}
+.main__board_column-tasks{min-height:260px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;border:1px solid;width:34%}
+.tasks{background-color:red;width:200px;margin:10px;position:absolute}.tasks:hover{transform:scale(1.1)}
 .tasks__grop{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #000}
 .tasks__all{font-size:13pt;font-weight:400}
 .tasks__title{font-weight:700;font-size:13pt}
