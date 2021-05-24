@@ -1,5 +1,6 @@
 import './page/index.css';
 
+
 const boardLeft = document.querySelector(".left");
 const boardCenter = document.querySelector('.center');
 const boardRight = document.querySelector('.right');
@@ -15,20 +16,31 @@ const tasksColor = document.querySelector('.color');
 const tasksBoard = document.querySelectorAll('.popup__radio');
 const boards = Array.from(document.querySelectorAll('.main__board_column-tasks'));
 
-function addCard(board,title,text,people,time,color){
+function addCard(obj){
     const card = document.getElementById('card').content.cloneNode(true);
-    card.querySelector('.tasks__title').textContent=title;
-    card.querySelector('.tasks__text').textContent=text;
-    card.querySelector('.tasks__people').textContent=people;
-    card.querySelector('.tasks__time').textContent=time;
-    card.querySelector('.tasks').style.background = color;
+    
+    card.querySelector('.tasks__title').textContent= obj.questName||'Задание '+obj.id;
+    card.querySelector('.tasks__text').textContent=obj.title;
+    card.querySelector('.tasks__people').textContent= obj.userName || 'Артем Алексеевич';
+    card.querySelector('.tasks__time').textContent=  obj.time ||  new Date();
+    card.querySelector('.tasks').style.background = obj.color || 'white';
     card.querySelector('.tasks__delete').addEventListener(('click'),(evt)=>{
         evt.target.parentNode.parentNode.remove();
     });
     new Draggabilly(card.querySelector('.tasks'),{
         containment: '.main__board_column'
     });
-    board.append(card);
+    if(obj.completed==='in progress')
+    {
+        boards[1].append(card);
+    }else
+    if(obj.completed){
+        boards[0].append(card);
+    }
+    else
+    if(!obj.completed){
+        boards[2].append(card);
+    }
 }
 
 function openPopup(pop){
@@ -40,20 +52,29 @@ function closePopup(pop){
 }
 
 function checkRadio(){
+        const objAssignee = {
+            "questName" : tasksName.value ,
+            "title": tasksText.value,
+            "userName": tasksNamePeople.value,
+            "time" : tasksTime.value,
+            "color": tasksColor.value,
+            "completed": ''
+        }
     if(tasksBoard[0].checked){
-        addCard(boardLeft,tasksName.value,tasksText.value,tasksNamePeople.value,tasksTime.value,tasksColor.value);
+        objAssignee.completed = true;
     }
     else if(tasksBoard[1].checked){
-        addCard(boardCenter,tasksName.value,tasksText.value,tasksNamePeople.value,tasksTime.value,tasksColor.value);
+        objAssignee.completed = "in progress";
     }
     else if(tasksBoard[2].checked){
-        addCard(boardRight,tasksName.value,tasksText.value,tasksNamePeople.value,tasksTime.value,tasksColor.value);
+        objAssignee.completed = "fasle";
     }
+    console.log(objAssignee);
+    addCard(objAssignee);
 }
 
 buttonSub.addEventListener('click',()=>{
     checkRadio();
-    console.log(tasksColor.value);
     closePopup(popup);
 })
 button.addEventListener('click',()=>{
@@ -61,6 +82,11 @@ button.addEventListener('click',()=>{
 })
 buttonClose.addEventListener('click',()=>{
     closePopup(popup);
-})
-addCard(boardLeft,"Задание 1","Надо выполнить задание 1","Выполнит: Морозов Артем Алексеевич","с 21.02.13 по 22.03.14",'white');
+})/*
+addCard(boardLeft,"Задание 1","Надо выполнить задание 1",'white');*/
 
+for(let i=0;i<=9;i++){
+    fetch('https://jsonplaceholder.typicode.com/todos')
+    .then(response => response.json())
+    .then(json => addCard(json[i]))
+}
