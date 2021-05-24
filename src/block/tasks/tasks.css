@@ -3,6 +3,9 @@
     width: 200px;
     margin: 10px;
     position: absolute;
+    padding: 8px;
+    border: 1px black solid;
+    border-radius: 4px;
 }
 .tasks:hover{
     transform: scale(1.1);

@@ -1,8 +1,8 @@
 .main__board{
-    width: 90%;
-    max-height: 850px;
+    height: 100%;
     display: flex;
     border: 3px solid black;
     padding: 5px;
     flex-direction: column;
+    border-radius: 4px;
 }

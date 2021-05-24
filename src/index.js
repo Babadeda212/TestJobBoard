@@ -62,5 +62,5 @@ button.addEventListener('click',()=>{
 buttonClose.addEventListener('click',()=>{
     closePopup(popup);
 })
-addCard(boardLeft,"Задание 1","Надо выполнить задание 1","Выполнит: Морозов Артем Алексеевич","с 21.02.13 по 22.03.14",'red');
+addCard(boardLeft,"Задание 1","Надо выполнить задание 1","Выполнит: Морозов Артем Алексеевич","с 21.02.13 по 22.03.14",'white');
 
