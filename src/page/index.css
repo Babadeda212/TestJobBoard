@@ -7,6 +7,7 @@
 @import url(../block/main/main.css);
 @import url(../block/main/__board/main__board.css);
 @import url(../block/main/__board/_column/main__board_column.css);
+@import url(../block/main/__name/main__board_name.css);
 @import url(../block/main/__board/_column/main__board_column-header.css);
 @import url(../block/main/__board/_column/main__board_column-tasks.css);
 

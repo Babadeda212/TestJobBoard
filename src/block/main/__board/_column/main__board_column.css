@@ -1,8 +1,6 @@
 .main__board_column{
-    width: 33%;
+    border: 2px solid #000;
+    display: flex;
     height: 100%;
-    border: 2px solid black;
-}
-.center{
-    margin: 0 5px 0;
+    width: 100%;
 }

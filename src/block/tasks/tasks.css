@@ -2,8 +2,8 @@
     background-color: red;
     width: 200px;
     margin: 10px;
+    position: absolute;
 }
 .tasks:hover{
-    width: 208px;
-    height: 208px;
+    transform: scale(1.1);
 }
